@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:ID>ACME-1002</cbc:ID>
+  <cbc:IssueDate>2026-10-05</cbc:IssueDate>
+  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+  <cac:AccountingSupplierParty><cac:Party>
+    <cac:PartyName><cbc:Name>ACME Industrial GmbH</cbc:Name></cac:PartyName>
+    <cac:PartyTaxScheme><cbc:CompanyID>DE811234567</cbc:CompanyID></cac:PartyTaxScheme>
+  </cac:Party></cac:AccountingSupplierParty>
+  <cac:LegalMonetaryTotal>
+    <cbc:TaxExclusiveAmount>640.00</cbc:TaxExclusiveAmount>
+    <cbc:TaxAmount>121.60</cbc:TaxAmount>
+    <cbc:TaxInclusiveAmount>761.60</cbc:TaxInclusiveAmount>
+  </cac:LegalMonetaryTotal>
+  
+</Invoice>

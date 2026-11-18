@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+  <ID>ACME-1004</ID>
+  <DocumentCurrencyCode>EUR</DocumentCurrencyCode>
+  <AccountingSupplierParty><Party><PartyName><Name>ACME Industrial GmbH</Name></PartyName></Party></AccountingSupplierParty>
+  <LegalMonetaryTotal><TaxExclusiveAmount>99.00</TaxExclusiveAmount><TaxAmount>18.81</TaxAmount><PayableAmount>117.81</PayableAmount></LegalMonetaryTotal>
+</Invoice>

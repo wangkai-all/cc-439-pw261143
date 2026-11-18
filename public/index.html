@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>发票接入 · Invoice Intake</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>发票接入</h1>
+        <p class="brand-sub">Invoice intake · XML / PDF · 原文哈希 · 解析器版本</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="pill" id="watch-pill" title="监控目录">—</span>
+      <button class="btn" id="scan-now" type="button">立即扫描</button>
+      <button class="btn btn-ghost" id="run-replay" type="button">重放历史</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" class="tab is-active" data-tab="overview" aria-selected="true">总览</button>
+    <button role="tab" class="tab" data-tab="batches" aria-selected="false">文件批次</button>
+    <button role="tab" class="tab" data-tab="documents" aria-selected="false">发票</button>
+    <button role="tab" class="tab" data-tab="quarantine" aria-selected="false">人工隔离</button>
+    <button role="tab" class="tab" data-tab="replays" aria-selected="false">重放</button>
+    <button role="tab" class="tab" data-tab="parsers" aria-selected="false">解析器</button>
+    <button role="tab" class="tab" data-tab="activity" aria-selected="false">事件日志</button>
+  </nav>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <section id="drawer" class="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-backdrop" data-close-drawer></div>
+    <div class="drawer-panel">
+      <button class="drawer-close" type="button" aria-label="关闭" data-close-drawer>×</button>
+      <div id="drawer-body"></div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

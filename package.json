@@ -1,0 +1,16 @@
+{
+  "name": "invoice-intake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Invoice file intake: watch XML/PDF, parse by supplier rules, hash originals, replay with parser versions, quarantine suspicious files.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node --watch src/server/index.js",
+    "test": "node --test \"test/*.test.js\"",
+    "seed": "node scripts/seed-demo.js"
+  }
+}

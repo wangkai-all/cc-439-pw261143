@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<NordwindInvoice>
+  <Number>NW-77121</Number>
+  <Date>2026-10-08</Date>
+  <Currency>EUR</Currency>
+  <Type>invoice</Type>
+  <Seller><Name>Nordwind Handels AG</Name><VatId>DE998877665</VatId></Seller>
+  <Totals><Net>1200.00</Net><Tax>228.00</Tax><Gross>1428.00</Gross></Totals>
+  <Items><Item Amount="1200.00"/></Items>
+  <CostCenter><Code>CC-4400</Code></CostCenter>
+</NordwindInvoice>

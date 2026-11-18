@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NordwindInvoice>
+  <Number>NW-77120</Number>
+  <Date>2026-10-07</Date>
+  <Currency>EUR</Currency>
+  <Type>invoice</Type>
+  <Seller><Name>Nordwind Handels AG</Name><VatId>DE998877665</VatId></Seller>
+  <Totals><Net>4300.00</Net><Tax>817.00</Tax><Gross>5117.00</Gross></Totals>
+  <Items><Item Amount="2500.00"/><Item Amount="1800.00"/></Items>
+</NordwindInvoice>
